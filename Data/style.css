@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas{
+    position: absolute;
+    pointer-events: none;
+}
+
+.upArrow{
+    position: absolute;
+    transform: rotate(-90deg) scale(3);
+    left: 50%;
+    margin-top: 5em;
+    fill: #fff; 
+}
+
+.rightArrow{
+    position: absolute;
+    transform: scale(3);
+    right: 0;
+    top: 50%;
+    margin-right: 5em;
+    fill: #fff;
+}
+
+.downArrow{
+    position: absolute;
+    transform: rotate(90deg) scale(3);
+    left: 50%;
+    bottom: 0;
+    margin-bottom: 5em;
+    fill: #fff;
+}
+
+.leftArrow{
+    position: absolute;
+    transform: rotate(-180deg) scale(3);
+    left: 0;
+    top: 50%;
+    margin-left: 5em;
+    fill: #fff;
+}
+
+.arrowDiv > *:hover
+{
+    fill: #ccc;
+    cursor: pointer;
+}
+
+.positionDown:hover, .monitorBtn:hover
+{
+    background: #ccc;
+    cursor: pointer;
+}
+
+.monitorBtn{
+    position: absolute;
+    /* left: 42.95%;
+    top: 41%; */
+    /* top: 32%;
+    left: 35.8%; */
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-63%,-250%);
+
+    background: #fff;
+
+    border: 3px solid black;
+    border-radius: 15px;
+
+    width: 13.3em;
+    height: 3em;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.positionDown
+{
+    bottom: 10%;
+    left: 50%;
+
+    transform: translate(-63%, 0);
+
+    position: absolute;
+
+    background: #fff;
+
+    border: 3px solid black;
+    border-radius: 15px;
+
+    width: 13.3em;
+    height: 3em;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.studyBtn
+{
+    top: 45%;
+    /* left: 59%; */
+    left: 62%;
+
+    transform: translate(-50%, 0);
+
+    position: absolute;
+
+    background: #000;
+    color: #fff;
+
+    border-radius: 15px;
+    border: solid #fff 2px;
+
+    /* width: 13.3em;
+    height: 3em; */
+
+    padding: 2em;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.deactivateStudyBtn
+{
+    background-color: rgb(100, 100, 100);
+    pointer-events: none;
+}
+
+.welcome{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 150%;
+    z-index: 3;
+    user-select: none;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.play{
+    align-self: center;
+    width: 6em;
+    height: 3em;
+    background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid #fff 2px;
+    border-radius: 15px;
+}
+
+.play:hover, .studyBtn:hover{
+    background: #fff;
+    color: #000;
+    border: solid #000 2px;
+    cursor: pointer;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+}

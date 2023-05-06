@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Night with Ghosty - Play</title>
+    <link rel="icon" type="image/png" href="../Site/img/icon.png"/>
+    <script type="module" src="./three.js"></script>
+    <script type="module" src="./threex.domevents.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="welcome">
+        <div>Ghosty est à votre recherche, parviendrez-vous à le désactiver avant qu'il ne vous trouve ?</div>
+        <div>Objectif : Désactiver les 10 modules qui font fonctionner Ghosty.</div>
+        <ol> Règles :
+            <li>
+                Ghosty bouge quand :
+                <ul>
+                    <li>Vous bougez</li>
+                    <li>Vous vous cachez ou sortez de votre cachette</li>
+                    <li>Vous progressez dans sa désactivation</li>
+                </ul>
+            </li>
+            <li>
+                Vous ne pouvez révéler Ghosty que 5 fois, utilisez-les avec parcimonie.
+            </li>
+        </ol>
+        <div>Que le sort vous soit favorable...</div>
+        <br/>
+        <div class="play">Jouer</div>
+    </div>
+    <div class="overlay"></div>
+    <div class="arrowDiv">
+        <svg class="upArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+        <svg class="rightArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+        <svg class="downArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+        <svg class="leftArrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z"/></svg>
+    </div>
+    <div class="monitorBtn">Deactivate Ghosty</div>
+    <div class="backFromMonitorBtn positionDown">Back</div>
+    <div class="hideBtn positionDown">Hide</div>
+    <div class="studyBtn">Study</div>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
